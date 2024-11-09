@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painting Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left Pane: Scrollable list of thumbnails -->
+    <div id="left-pane" class="pane">
+      <div id="painting-list" class="scrollable">
+        <!-- Example painting item -->
+        <div class="painting-item">
+          <img src="thumbnail.jpg" alt="Painting Thumbnail" class="thumbnail">
+          <button class="view-btn">View</button>
+        </div>
+        <!-- Repeat painting-item for each painting -->
+      </div>
+    </div>
+
+    <!-- Right Pane: Painting details -->
+    <div id="right-pane" class="pane">
+
+
+      <!-- Editable Details Form -->
+      <form id="painting-details-form">
+              
+        <!-- Title and Main Info -->
+      <div class="section header-section">
+        <h2 class="painting-title">Painting Title</h2>
+        <p class="painting-description">Short description of the painting.</p>
+      </div>
+        <!-- Section 1: Basic Information -->
+        <div class="section">
+          <label>Artist First Name</label>
+          <input type="text" name="firstName" class="input-field">
+          
+          <label>Artist Last Name</label>
+          <input type="text" name="lastName" class="input-field">
+          
+          <label>Gallery</label>
+          <input type="text" name="gallery" class="input-field">
+        </div>
+
+        <!-- Section 2: Additional Information -->
+        <div class="section">
+          <label>Year of Work</label>
+          <input type="text" name="yearOfWork" class="input-field">
+          
+          <label>Medium</label>
+          <input type="text" name="medium" class="input-field">
+          
+          <label>Description</label>
+          <textarea name="description" class="textarea-field"></textarea>
+        </div>
+
+        <!-- Save and Cancel Buttons -->
+        <div class="button-group">
+          <button type="submit" class="save-btn">Save</button>
+          <button type="button" class="cancel-btn">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

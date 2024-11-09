@@ -1,0 +1,147 @@
+/* Base Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f6f8;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Left Pane */
+  #left-pane {
+    width: 25%;
+    background-color: #e9ecf2;
+    padding: 15px;
+    overflow-y: auto;
+    border-right: 1px solid #ccc;
+  }
+  
+  .scrollable {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .painting-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .view-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .view-btn:hover {
+    background-color: #555;
+  }
+  
+  /* Right Pane */
+  #right-pane {
+    width: 75%;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .header-section {
+    margin-bottom: 20px;
+  }
+  
+  .painting-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .painting-description {
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .section {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .input-field, .textarea-field {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  .textarea-field {
+    resize: vertical;
+    height: 80px;
+  }
+  
+  /* Button Group */
+  .button-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .save-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cancel-btn {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .save-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #aaa;
+  }
+  
