@@ -9,6 +9,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+
 // Serve static files (client)
 app.use(express.static('public'));
 
